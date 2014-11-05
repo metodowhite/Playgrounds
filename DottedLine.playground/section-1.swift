@@ -1,8 +1,6 @@
 // Playground - noun: a place where people can play
 
 import UIKit
-
-import UIKit
 import XCPlayground
 
 let path = UIBezierPath()
