@@ -17,13 +17,13 @@ func maskImage(image: UIImage, withBezier bezier: UIBezierPath) -> (positive: UI
     
     CGContextAddPath(context, bezier.CGPath)
     CGContextClip(context)
-    leImage?.drawInRect(CGRect(origin: origin2, size: image.size))
+    image.drawInRect(CGRect(origin: origin2, size: image.size))
     let positive = UIGraphicsGetImageFromCurrentImageContext()
 
     CGContextRestoreGState(context)
     
     CGContextAddPath(context, bezier.CGPath)
-    leImage?.drawInRect(CGRect(origin: origin2, size: image.size))
+    image.drawInRect(CGRect(origin: origin2, size: image.size))
     CGContextEOClip(context);
     CGContextClearRect(context, rect);
     let negative = UIGraphicsGetImageFromCurrentImageContext()
