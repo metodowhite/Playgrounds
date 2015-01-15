@@ -23,4 +23,4 @@ let image = UIImage(named: "Some_2.tiff")
 let point = CGPoint(x: 90, y: 30)
 
 // Use your extension
-let greenColour = image!.getPixelColor(point)
+let greenColour = image?.getPixelColor(point)
